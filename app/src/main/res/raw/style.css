@@ -1,0 +1,37 @@
+@font-face {
+	font-family: "Roboto Mono";
+	src: url(roboto.ttf);
+}
+
+body {
+	font-family: 'Roboto Mono';
+	color: #3c3c3c;
+	margin-top: -6px;
+}
+
+input {
+	accent-color: #3a3a3a;
+}
+
+#btndica {
+	position: absolute;
+	z-index: 2;
+	bottom: 4px;
+	right: 4px;
+}
+
+#dica {
+	position: absolute;
+	z-index: 3;
+	bottom: 0px;
+	padding: 8px;
+	background-color: #ffffff;
+}
+
+#prazo {
+	width: 80px;
+}
+
+#relatorio {
+	text-align: center;
+}

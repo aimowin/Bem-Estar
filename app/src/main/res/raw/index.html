@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>bem-estar</title>
+	<meta charset=UTF-8>
+	<meta name=viewport content='width=device-width'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body><br>
+	<form name=form>
+	<table align=center>
+	<tr><td id=prazo><h3>Em 24<br>horas</h3></td><td>
+		<label><input type=radio name=sono id=sono1 value=1 onclick="mostra();">Meu sono é bom.</label><br>
+		<label><input type=radio name=sono id=sono0 value=0 onclick="mostra();">Meu sono é ruim.<br></label><br>
+		<label><input type=radio name=comida id=comida1 value=1 onclick="mostra();">Alimentação boa.</label><br>
+		<label><input type=radio name=comida id=comida0 value=0 onclick="mostra();">Alimentação ruim.<br></label><br>
+		<label><input type=radio name=futuro id=futuro1 value=1 onclick="mostra();">O futuro será bom.</label><br>
+		<label><input type=radio name=futuro id=futuro0 value=0 onclick="mostra();">O futuro será ruim.</label></td></tr>
+	</table>
+	</form>
+
+	<div id=relatorio></div>
+
+	<div id=dica style='display:none;'>
+		<b>Se está bom</b> inviste em gratidão<br>&nbsp;&nbsp;e parte para a próxima meta.<br>
+		<b>Se não está bom</b> inviste em humildade<br>&nbsp;&nbsp;para pedir ajuda.
+	</div>
+	<button id=btndica onclick="document.getElementById('dica').style.display = document.getElementById('dica').style.display == '' ? 'none' : '';">?</button>
+
+</body>
+<script src="script.js"></script>
+</html>
